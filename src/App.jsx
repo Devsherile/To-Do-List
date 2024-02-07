@@ -20,22 +20,27 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Todo List</h1>{" "}
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={() => addToDo(input)}>Add</button>
-      <ul>
-        {list.map((todo) => (
-          <li key={todo.id}>
-            {todo.text}
-            <button onClick={() => deleteToDo(todo.id)}>&times;</button>
-          </li>
-        ))}
-      </ul>
+      <div className="form">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button onClick={() => addToDo(input)}>Add</button>
+        
+      </div>
+      <ul
+      className="list"
+      >
+          {list.map((todo) => (
+            <li key={todo.id}>
+              {todo.text}
+              <button onClick={() => deleteToDo(todo.id)}>&times;</button>
+            </li>
+          ))}
+        </ul>
     </div>
   );
 }
