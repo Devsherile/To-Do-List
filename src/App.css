@@ -1,49 +1,46 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* min-height: 100vh; */
   height: 50%;
-  background-color: #cb6565;
+  background-color: white;
   padding: 20px;
-  width: 50%;
+  width: 300px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* max-width: 100%;  */
-
-  /* height: 400px;
-  
-  justify-content: center; */
+  border-radius: 10px;
+  border: 1px solid #f1356d;
 }
-h1{
+body {
+  background: teal;
+}
+h1 {
   text-align: center;
   margin: 20px 0;
   color: black;
 }
-.form{
+.form {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
-.list{
+.list {
   list-style: lower-alpha;
   padding: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  
 }
-input{
+input {
   padding: 10px;
   margin: 10px;
   width: 200px;
   display: block;
-  
 }
-button{
+button {
   padding: 10px 20px;
   margin: 10px;
   border: none;
